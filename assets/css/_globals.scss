@@ -18,7 +18,7 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
-  color: $grayish-blue;
+  
 }
 
 
@@ -45,8 +45,25 @@ a, a:visited, a:hover {
 // Buttons
 
 button, .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   background: $gradient;
+  border: none;
+  color: $white;
   cursor: pointer;
+  font-weight: 400;
+}
+
+
+// Visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
 }
