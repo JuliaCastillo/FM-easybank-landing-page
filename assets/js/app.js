@@ -6,5 +6,4 @@ btnHamburger.addEventListener('click', function () {
   } else {
     btnHamburger.classList.add('open');
   }
-
 })
