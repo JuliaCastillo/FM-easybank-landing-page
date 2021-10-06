@@ -4,7 +4,7 @@
 
   &.open {
 
-    .header__menu {
+    .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -22,7 +22,7 @@
   .overlay {
     opacity: 0;
     position: fixed;
-    top: 75.8px;  //originally 3.75rem (60px)
+    top: 0;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -32,8 +32,12 @@
 
 
 
+
   nav {
-    padding: 24px;
+    position: relative;
+    background-color: $white;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
   }
 
   &__logo {
@@ -45,7 +49,7 @@
 
   }
 
-  &__menu {     //mobile menu
+  &__toggle {     //mobile menu
 
     > span {
       display: block;
@@ -61,6 +65,25 @@
     }
 
     
+  }
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    // left: 50%;
+    // transform: translateX(-50%);
+    background: $white;
+    padding: 1.625rem;
+    margin: 1.5rem;
+    border-radius: 5px;
+
+    a {
+      display: block;
+      color: $dark-blue;
+      padding: 0.625rem;
+      text-align: center;
+      cursor: pointer;
+    }
   }
 
   &__links {
