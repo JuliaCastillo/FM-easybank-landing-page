@@ -18,6 +18,15 @@ body {
   &.noscroll {
     overflow: hidden;
   }
+
+  @include breakpoint-up(large) {
+    font-size: $font-md;
+  }
+}
+
+
+h1, h2, h3 {
+  margin-top: 0px;
 }
 
 a, a:visited, a:hover {
@@ -48,8 +57,53 @@ a, a:visited, a:hover {
 // Spacing
 
 .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 4.375rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &--pt {
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+    }
+  }
+  &--pr {
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
 }
 
 // Buttons
@@ -62,6 +116,12 @@ button, .button {
   color: $white;
   cursor: pointer;
   font-weight: 400;
+  font-size: $font-sm;
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 
