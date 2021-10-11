@@ -556,4 +556,8 @@ button:hover,
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+.articles {
+  background-color: #fafafa;
+}
 /*# sourceMappingURL=styles.css.map */
