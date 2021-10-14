@@ -3,6 +3,7 @@
 $dark-blue: hsl(233, 26%, 24%);
 $lime-green: hsl(136, 65%, 51%);
 $bright-cyan: hsl(192, 70%, 51%);
+$remix: hsl(171, 62%, 46%);
 
 $gradient: linear-gradient(to right, $lime-green, $bright-cyan);
 
@@ -11,9 +12,8 @@ $light-grayish-blue: hsl(220, 16%, 96%);
 $very-light-gray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
-
 // Font sizes
-$font-sm: 0.875rem;   // 14px
-$font-md: 1.125rem;   // 18px
-$font-lg: 1.25rem;    // 20px
-$font-xlg: 3.25rem;   // 52px
+$font-sm: 0.875rem; // 14px
+$font-md: 1.125rem; // 18px
+$font-lg: 1.25rem; // 20px
+$font-xlg: 3.25rem; // 52px

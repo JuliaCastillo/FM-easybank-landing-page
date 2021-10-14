@@ -587,6 +587,21 @@ button:hover,
 .article__item {
   border-radius: 0.3125rem;
   overflow: hidden;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.article__item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.article__item:hover .article__title {
+  color: #2dbea8;
 }
 
 .article__image {
@@ -597,7 +612,6 @@ button:hover,
 }
 
 .article__text {
-  background-color: white;
   padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 }
 
