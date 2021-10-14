@@ -10,12 +10,16 @@
     display: grid;
     grid-template-columns: 1fr;
 
+    //another option without media queries
+    //grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+    // not the best option as, at a certain browser size, there will only be one element in the next row -> uneven
+
     @include breakpoint-up(medium) {
-      grid-template-columns: repeat (2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @include breakpoint-up(large) {
-      grid-template-columns: repeat (4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
@@ -23,6 +27,10 @@
   }
 
   &__image {
+    height: 12.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   &__text {
