@@ -24,6 +24,7 @@ body {
 
   @include breakpoint-up(large) {
     font-size: $font-md;
+    //overflow-x: hidden;
   }
 }
 

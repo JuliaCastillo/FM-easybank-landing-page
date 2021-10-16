@@ -636,4 +636,49 @@ button:hover,
 .article__description {
   font-size: 0.8125rem;
 }
+
+.footer {
+  background-color: #2d314d;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1.875rem;
+}
+
+.footer__social {
+  margin-bottom: 1.875rem;
+}
+
+.footer__social a {
+  display: inline-block;
+}
+
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__links.col2 {
+  margin-bottom: 1.875rem;
+}
+
+.footer__cta {
+  margin-bottom: 1.875rem;
+}
+
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer .attribution a {
+  color: #2dbea8;
+}
 /*# sourceMappingURL=styles.css.map */
